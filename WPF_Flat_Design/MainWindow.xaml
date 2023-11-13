@@ -35,7 +35,8 @@
                        HorizontalAlignment="Left"
                        Foreground="White"
                        FontSize="22"
-                       Margin="20, 0, 0, 0"/>
+                       Margin="20, 0, 0, 0"
+                       FontFamily="/Fonts/#EduTASBeginner-Regular"/>
 
             <StackPanel Grid.Row="1">
 
@@ -43,13 +44,17 @@
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"
+                             FontFamily="/Fonts/#EduTASBeginner"/>
 
                 <RadioButton Content="Discovery"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding DiscoveryViewCommand}"/>
 
                 <RadioButton Content="Featured"
                              Height="50"
